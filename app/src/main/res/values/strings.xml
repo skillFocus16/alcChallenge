@@ -4,5 +4,7 @@
     <string name="my_profile">MY PROFILE</string>
     <string name="about_alc">ABOUT ALC</string>
     <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+    <string name="about_alc_title">About ALC</string>
+    <string name="my_profile_title">My Profile</string>
 
 </resources>

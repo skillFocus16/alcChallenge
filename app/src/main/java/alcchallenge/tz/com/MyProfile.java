@@ -2,8 +2,6 @@ package alcchallenge.tz.com;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -16,7 +14,6 @@ import com.bumptech.glide.request.RequestOptions;
  */
 public class MyProfile extends AppCompatActivity {
 
-    private ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
@@ -24,7 +21,7 @@ public class MyProfile extends AppCompatActivity {
             setContentView(R.layout.activity_my_profile);
             initToolBar();
 
-            image = findViewById(R.id.profileImage);
+            ImageView image = findViewById(R.id.profileImage);
 
             RequestOptions bOptions = new RequestOptions()
                     .priority(Priority.NORMAL)
@@ -51,7 +48,7 @@ public class MyProfile extends AppCompatActivity {
 
 
     private void initToolBar() {
-        getSupportActionBar().setTitle("My Profile");
+        getSupportActionBar().setTitle(R.string.my_profile_title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }

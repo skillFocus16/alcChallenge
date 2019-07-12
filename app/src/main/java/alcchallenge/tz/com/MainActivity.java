@@ -1,17 +1,12 @@
 package alcchallenge.tz.com;
 
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import java.lang.reflect.Type;
-
 public class MainActivity extends AppCompatActivity {
-
-    private Button toActivity1, toActivity2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            toActivity1 = findViewById(R.id.toActivity1);
-            toActivity2 = findViewById(R.id.toActivity2);
+            Button toActivity1 = findViewById(R.id.toActivity1);
+            Button toActivity2 = findViewById(R.id.toActivity2);
 
             toActivity1.setOnClickListener(new View.OnClickListener() {
                 @Override
